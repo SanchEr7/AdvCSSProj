@@ -3,9 +3,10 @@
 @use 'blocks/blocks';
 
 body {
-    background-color: lightblue;
+    background-color: linear-gradiant(135deg, #667eea 0%, #764ba2, 100%);
     font-family: 'Lato', sans-serif;
     padding-top: calc(80px + 1vw + 10px);
+    min-height: 100vh;
 
 }
 

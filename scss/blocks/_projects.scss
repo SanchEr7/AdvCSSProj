@@ -1,0 +1,40 @@
+@use '../utils/utils' as *;
+
+.latest-projects {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: $spacing-large auto;
+    max-width: 1000px;
+    padding: $spacing-large;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+
+    h2 {
+        color: $primary-color;
+        margin-bottom: $spacing-medium;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+     ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+        background-color: $light-gray;
+        padding: $spacing-small $spacing-medium;
+        margin-bottom: $spacing-small;
+        border-radius: 8px;
+        border-left: 4px solid rgb(231, 194, 237);
+        transition: transform $transition-fast;
+
+        &:hover {
+        transform: translateX(10px);
+       }
+    }
+  }
+  p {
+    color: $text-light;
+    margin-bottom: $spacing-small;
+  }
+}
