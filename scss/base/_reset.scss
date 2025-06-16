@@ -1,0 +1,15 @@
+@use '../utils/utils';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    color: utils.$text-dark;
+    background-color: utils.$white;
+    padding-top: 80px;
+}

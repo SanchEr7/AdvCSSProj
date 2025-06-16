@@ -1,0 +1,44 @@
+@use '../utils/utils' as *;
+
+.btn {
+    background-color: $primary-color;
+    color: $white;
+    padding: $spacing-small $spacing-medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color $transition-normal;
+
+    animation: float 3s ease-in-out infinite;
+    
+    &:hover {
+        background-color: $secondary-color;
+        animation-play-state: paused; //stop floating on hover
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+    
+}
+
+.btn--secondary {
+    background-color: $secondary-color;
+    
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+
+@media(prefers-reduced-motion: reduce){
+    .btn{
+        animation: none;
+    }
+}

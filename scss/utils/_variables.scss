@@ -1,0 +1,29 @@
+//colors
+
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$accent-color: #e74c3c;
+$white: #ffffff;
+$text-dark: #333;
+$text-light: #7f8c8d;
+$light-gray: #2cf0f1;
+
+//spacing for devices
+
+$spacing-small: 1rem;
+$spacing-medium: 1.5rem;
+$spacing-large: 2rem;
+
+//breakpoints
+
+$mobile: 768px;
+
+//transitions
+
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+//header height for shrinking nav
+$header-height-large: 80px;
+$header-height-small: 60px;
