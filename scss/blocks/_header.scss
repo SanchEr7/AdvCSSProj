@@ -38,7 +38,16 @@
     text-decoration: none;
     font-weight: 500;
     transition: color $transition-normal;
+
+    &:focus {
+        outline: 3px solid $accent-color;
+        outline-offset: 2px;
+        background-color: rgba(241, 78, 60, 0.1);
+        border-radius: 4px;
+    }
 }
+
+
 
 .header__nav a:hover {
     color: $accent-color;

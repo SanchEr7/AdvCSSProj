@@ -16,6 +16,11 @@
         background-color: $secondary-color;
         animation-play-state: paused; //stop floating on hover
     }
+
+    &:focus {
+        outline: 3px solid $accent-color;
+        outline-offset: 2px;
+    }
 }
 
 @keyframes float {

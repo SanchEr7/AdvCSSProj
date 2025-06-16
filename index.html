@@ -3,7 +3,7 @@
 
 <head>
   <title>Portfolio</title>
-  <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="/dist/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +19,8 @@
       <h1>Eric Sanchez!</h1>
       
       <nav class="header__nav">
-        <a href="#latest-projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#latest-projects" role="Navigation" aria-label="Navigation">Projects</a>
+        <a href="#contact" aria-label="Contact Information">Contact</a>
       </nav>
     </div>
   </header>
@@ -28,8 +28,8 @@
     <section id="bio" class="bio">
       <h1>About Me</h1>
       <p>The names Eric Sanchez and don't you forget it!!!!!</p>
-      <button class="btn">Primary Button</button>
-      <button class="btn btn--secondary">Secondary Button</button>
+      <button class="btn" aria-label="Primary Button">Primary Button</button>
+      <button class="btn btn--secondary" aria-label="Secondary button">Secondary Button</button>
     </section>
     <section id="latest-projects" class="latest-projects">
       <h2>Latest Projects</h2>
@@ -47,9 +47,12 @@
       <p>Scrolling Through Stuff</p>
       <p>Scrolling Through Stuff</p>
       <p>Scrolling Through Stuff</p>
+      <p>Scrolling Through Stuff</p>
+      <p>Scrolling Through Stuff</p>
     </section>
   </main>
   <footer class="footer">
+    <p>&copy: Eric Sanchez 2025</p>
   </footer>
 </body>
 

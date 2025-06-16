@@ -39,6 +39,12 @@
   font-weight: 500;
   transition: color 0.3s ease;
 }
+.header__nav a:focus {
+  outline: 3px solid #e74c3c;
+  outline-offset: 2px;
+  background-color: rgba(241, 78, 60, 0.1);
+  border-radius: 4px;
+}
 
 .header__nav a:hover {
   color: #e74c3c;
@@ -58,6 +64,10 @@
 .btn:hover {
   background-color: #3498db;
   animation-play-state: paused;
+}
+.btn:focus {
+  outline: 3px solid #e74c3c;
+  outline-offset: 2px;
 }
 
 @keyframes float {
@@ -139,4 +149,12 @@ p {
 .latest-projects p {
   color: #ecf0f1;
   margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=blocks.css.map */
