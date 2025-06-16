@@ -10,9 +10,21 @@
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-}
+    text-align: center;
 
-h1 {
+    &__image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: $spacing-medium;
+    border: 4px solid $primary-color;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
     color: $primary-color;
     margin-bottom: $spacing-medium;
     font-size: 2.5rem;
@@ -24,4 +36,10 @@ p {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: $spacing-large;
+  }
 }
+
+
+
+
+

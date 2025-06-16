@@ -3,10 +3,15 @@
 @use 'blocks/blocks';
 
 body {
-    background-color: linear-gradiant(135deg, #667eea 0%, #764ba2, 100%);
+    background: linear-gradiant(135deg, #667eea 0%, #764ba2, 100%);
     font-family: 'Lato', sans-serif;
     padding-top: calc(80px + 1vw + 10px);
     min-height: 100vh;
 
 }
 
+.header__log-image {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+}

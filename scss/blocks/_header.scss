@@ -11,13 +11,15 @@
     height: calc(#{$header-height-large} + 1vw);
     padding: calc(#{$spacing-medium} - 0.5rem) 0;
     transition: all $transition-normal;
+    
 }
 
 .header__content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 $spacing-medium;
-    @include flex-between;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
     align-items: center;
 }
@@ -26,6 +28,21 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: $primary-color;
+    display: flex;
+    align-items: center;
+    gap: $spacing-small;
+
+    &-image {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .header__nav {
@@ -33,22 +50,21 @@
     gap: $spacing-medium;
 }
 
-.header__nav a {
-    color: $text-light;
+ a {
+    color: $primary-color;
     text-decoration: none;
     font-weight: 500;
     transition: color $transition-normal;
 
+    &:hover {
+        color: $accent-color;
+    }
+
     &:focus {
         outline: 3px solid $accent-color;
         outline-offset: 2px;
-        background-color: rgba(241, 78, 60, 0.1);
-        border-radius: 4px;
+        
     }
+    
 }
 
-
-
-.header__nav a:hover {
-    color: $accent-color;
-}
